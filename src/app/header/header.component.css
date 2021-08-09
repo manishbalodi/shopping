@@ -12,6 +12,10 @@
 }
 .navbar{
     background: transparent;
+    background-color:cadetblue;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 /* .bg-color{
     background-color:rgb(26, 123, 153);

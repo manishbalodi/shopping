@@ -10,6 +10,7 @@ import { MobileComponent } from './electronic/mobile/mobile.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { LandingComponent } from './electronic/landing/landing.component';
 import { ListComponent } from './electronic/list/list.component';
+import { DetailComponent } from './electronic/detail/detail.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ListComponent } from './electronic/list/list.component';
     MobileComponent,
     FashionComponent,
     LandingComponent,
-    ListComponent
+    ListComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
