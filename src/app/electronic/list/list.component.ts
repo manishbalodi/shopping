@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/data.service';
+import { Details } from 'src/app/shared/details.model';
 
 @Component({
   selector: 'app-list',
@@ -7,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+  listData : Details[] | undefined;
+
   public text : string = `This is a wider card with supporting text below as a natural
   lead-in to additional content. This content is a little bit
   longer.`
 
-  constructor() { }
+  constructor(private dataService : DataService) { }
 
   ngOnInit(): void {
+
+    
+
   }
 
 }

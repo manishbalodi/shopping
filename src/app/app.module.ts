@@ -11,6 +11,9 @@ import { FashionComponent } from './fashion/fashion.component';
 import { LandingComponent } from './electronic/landing/landing.component';
 import { ListComponent } from './electronic/list/list.component';
 import { DetailComponent } from './electronic/detail/detail.component';
+import { AdminComponent } from './admin/admin.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,11 +26,14 @@ import { DetailComponent } from './electronic/detail/detail.component';
     FashionComponent,
     LandingComponent,
     ListComponent,
-    DetailComponent
+    DetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
