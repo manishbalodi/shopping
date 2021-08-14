@@ -17,18 +17,18 @@ export class ListService {
     getData(){
          this.dataService.getDetails().subscribe(
              details => {
-            //    console.log(details);
-            //    let arr = details;
                let arr2 : object[] = [];
                details.forEach(element => {
                     arr2.push(element[1]);
                });
-              // console.log(arr2);
                this.detailsArray = arr2;
               }
          );
-         //console.log(this.detailsArray);
          return this.detailsArray;
+    }
+
+    getDetail(id : number){
+       return this.detailsArray[id];
     }
 
 }
