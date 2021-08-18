@@ -13,9 +13,8 @@ const routes: Routes = [
   {path:'dashboard',component : DashboardComponent},
   {path: 'electronics' , component : ElectronicComponent , children :[
     {path : '' , component : LandingComponent},
-    {path : 'mobile' , component : MobileComponent ,children :[
-      {path : ':id' , component : DetailComponent}
-    ]}
+    {path : 'mobile' , component : MobileComponent},
+    // {path : 'mobile/:id' , component : MobileComponent}
 ]},
   {path: 'fashion' , component : FashionComponent},
   {path:'admin',component : AdminComponent}

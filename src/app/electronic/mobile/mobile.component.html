@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <app-list></app-list>
+                <app-list (listComponetToMobileComponent)="onGettingdataFromList($event)"></app-list>
             </div>
             <div class="col-md-7">
-                <app-detail></app-detail>
+                <app-detail [mobDetail]="mobileDetailsGotFromList"></app-detail>
             </div>
         </div>
     </div>

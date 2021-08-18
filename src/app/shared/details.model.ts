@@ -6,6 +6,7 @@ export class Details {
     public imagePath : string;
     public price : number;
     public description : string;
+    //public productId : string;
 
     constructor(name:string , description:string , imagePath:string , features:Features , price : number ){
         this.name = name;
@@ -13,6 +14,8 @@ export class Details {
         this.imagePath = imagePath;
         this.features = features;
         this.price =price;
+        //this.productId = productId;
+
     }
 
 }

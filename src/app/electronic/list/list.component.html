@@ -19,9 +19,8 @@
                     <small> {{data.description.substring(0,100) + "..."}} </small>
                   </p>
                   <p class="card-text">
-                    <button class="btn btn-success" type="button">Add to Cart</button>
+                    <button class="btn btn-success" type="button" (click)="mobileData(data)">Show Detail</button>
                   </p>
-                  <a routerLink='./{{i}}' class="stretched-link"></a>
                 </div>
               </div>
             </div>

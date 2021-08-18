@@ -10,12 +10,10 @@ export class ListService {
 
     detailsArray : any[] = [];
 
-    
-
     constructor(private dataService : DataService ){}
 
-    getData(){
-         this.dataService.getDetails().subscribe(
+     getData(){
+          this.dataService.getDetails().subscribe(
              details => {
                let arr2 : object[] = [];
                details.forEach(element => {
@@ -24,11 +22,12 @@ export class ListService {
                this.detailsArray = arr2;
               }
          );
+
          return this.detailsArray;
     }
 
-    getDetail(id : number){
-       return this.detailsArray[id];
+      getDetail(id : number){
+        return this.detailsArray[id];
     }
 
 }
