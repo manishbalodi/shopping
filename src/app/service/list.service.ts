@@ -12,8 +12,8 @@ export class ListService {
 
     constructor(private dataService : DataService ){}
 
-     getData(){
-          this.dataService.getDetails().subscribe(
+     getData(type : String){
+          this.dataService.getDetails(type).subscribe(
              details => {
                let arr2 : object[] = [];
                details.forEach(element => {

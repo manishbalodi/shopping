@@ -20,8 +20,8 @@ export class DataService{
 
     }
 
-    getDetails(){
-       return this.http.get<Details[]>('https://shopit-3f3c8-default-rtdb.firebaseio.com/mobile.json').
+    getDetails(type : String){
+       return this.http.get<Details[]>('https://shopit-3f3c8-default-rtdb.firebaseio.com/'+type+'.json').
        pipe(map(details=>{
         return Object.entries(details);
        }));

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from "@angular/core"
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core"
 import { Subscription } from "rxjs"
 import { DataService } from "src/app/service/data.service"
 import { Details } from "src/app/shared/details.model"
@@ -17,9 +17,10 @@ export class ListComponent implements OnInit {
 
   constructor( private listService: ListService  ) {}
 
+    @Input('type') type : String = '';
 
    ngOnInit(): void {
-    this.listData = this.listService.getData()
+    this.listData = this.listService.getData(this.type);
     //console.log(this.listData)
   }
 

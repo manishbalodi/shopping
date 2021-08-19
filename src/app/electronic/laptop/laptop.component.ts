@@ -11,6 +11,7 @@ export class LaptopComponent implements OnInit {
 
   mobileDetailsGotFromList!: Details;
   public showContent: boolean = false;
+  public typeOfComponent : String = 'laptop';
 
   constructor(private listService : ListService) { }
 

@@ -12,6 +12,7 @@ export class MobileComponent implements OnInit {
 
   mobileDetailsGotFromList!: Details;
   public showContent: boolean = false;
+  public typeOfComponent : String = 'mobile';
 
   constructor(private listService : ListService, private route : ActivatedRoute) { }
 
