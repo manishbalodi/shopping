@@ -10,7 +10,7 @@ import { Details } from "src/app/shared/details.model"
 })
 export class DetailComponent implements OnInit {
   // public showDetail!: Details;
-
+  public showContent : boolean = false;
   @Input("mobDetail") showDetail: Details = {
     name: "Mobile Name",
     features: {
@@ -32,6 +32,7 @@ export class DetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.showDetail = this.listService.getDetail(0)
+    setTimeout(()=>this.showContent=true, 500);
     console.log(this.showDetail)
   }
 }

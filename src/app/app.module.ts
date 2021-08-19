@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LaptopComponent } from './electronic/laptop/laptop.component';
+import { ApplianceComponent } from './electronic/appliance/appliance.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { LaptopComponent } from './electronic/laptop/laptop.component';
     ListComponent,
     DetailComponent,
     AdminComponent,
-    LaptopComponent
+    LaptopComponent,
+    ApplianceComponent
   ],
   imports: [
     BrowserModule,

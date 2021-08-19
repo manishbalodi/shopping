@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { DetailComponent } from './electronic/detail/detail.component';
+import { ApplianceComponent } from './electronic/appliance/appliance.component';
 import { ElectronicComponent } from './electronic/electronic.component';
 import { LandingComponent } from './electronic/landing/landing.component';
 import { LaptopComponent } from './electronic/laptop/laptop.component';
@@ -15,7 +15,8 @@ const routes: Routes = [
   {path: 'electronics' , component : ElectronicComponent , children :[
     {path : '' , component : LandingComponent},
     {path : 'mobile' , component : MobileComponent},
-    {path : 'laptop' , component : LaptopComponent}
+    {path : 'laptop' , component : LaptopComponent},
+    {path : 'appliance' , component : ApplianceComponent}
 ]},
   {path: 'fashion' , component : FashionComponent},
   {path:'admin',component : AdminComponent}
