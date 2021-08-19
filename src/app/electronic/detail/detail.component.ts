@@ -35,17 +35,3 @@ export class DetailComponent implements OnInit {
     console.log(this.showDetail)
   }
 }
-
-// = {
-//   "name" : "Mobile Name",
-//   "features" : {
-//     "feature1" : "Feature 1",
-//     "feature2" : "Feature 2",
-//     "feature3" : "Feature 3",
-//     "feature4" : "Feature 4",
-//     "feature5" : "Feature 5",
-//   },
-//   "imagePath" : "",
-//   "price" : 10000,
-//   "description" : ""
-// } ;

@@ -13,6 +13,7 @@ import { DetailComponent } from './electronic/detail/detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LaptopComponent } from './electronic/laptop/laptop.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     LandingComponent,
     ListComponent,
     DetailComponent,
-    AdminComponent
+    AdminComponent,
+    LaptopComponent
   ],
   imports: [
     BrowserModule,

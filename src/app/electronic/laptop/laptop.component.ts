@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
 import { ListService } from 'src/app/service/list.service';
 import { Details } from 'src/app/shared/details.model';
 
 @Component({
-  selector: 'app-mobile',
-  templateUrl: './mobile.component.html',
-  styleUrls: ['./mobile.component.css']
+  selector: 'app-laptop',
+  templateUrl: './laptop.component.html',
+  styleUrls: ['./laptop.component.css']
 })
-export class MobileComponent implements OnInit {
+export class LaptopComponent implements OnInit {
 
   mobileDetailsGotFromList!: Details;
   public showContent: boolean = false;
 
-  constructor(private listService : ListService, private route : ActivatedRoute) { }
+  constructor(private listService : ListService) { }
 
   ngOnInit(): void {
     setTimeout(()=>this.showContent=true, 500);
@@ -23,5 +22,4 @@ export class MobileComponent implements OnInit {
     console.log(detail , " -> in mobile");
     this.mobileDetailsGotFromList = detail;
   }
-
 }

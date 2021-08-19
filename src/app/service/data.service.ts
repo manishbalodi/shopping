@@ -11,12 +11,13 @@ export class DataService{
 
     constructor(private http : HttpClient ){}
 
-    createAndStoreDetails(detailData : Details){
-        this.http.post('https://shopit-3f3c8-default-rtdb.firebaseio.com/mobile.json' , detailData)
+    createAndStoreDetails(detailData : Details , type : string){
+      this.http.post('https://shopit-3f3c8-default-rtdb.firebaseio.com/'+type+'.json' , detailData)
         .subscribe(
       responseData =>{
         //console.log(responseData);
       });
+
     }
 
     getDetails(){
@@ -26,4 +27,6 @@ export class DataService{
        }));
     }
 
+
+  
 }

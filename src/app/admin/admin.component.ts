@@ -24,7 +24,8 @@ export class AdminComponent implements OnInit {
       'feature5' : new FormControl('',Validators.required),
       'price' : new FormControl('',Validators.required),
       'imagePath' : new FormControl('',Validators.required),
-      'description' : new FormControl('',Validators.required)
+      'description' : new FormControl('',Validators.required),
+      'relatedComponent' : new FormControl('',Validators.required)
     });
   }
 
@@ -47,9 +48,11 @@ export class AdminComponent implements OnInit {
       "imagePath" : this.addDataForm.value.imagePath,
       "description" : this.addDataForm.value.description,
     }
+    let componentRelatedTo : string = this.addDataForm.value.relatedComponent;
 
     console.log(detailsData);
-    this.dataService.createAndStoreDetails(detailsData);
+    console.log(componentRelatedTo);
+    this.dataService.createAndStoreDetails(detailsData , componentRelatedTo);
     this.addDataForm.reset();
   }
 

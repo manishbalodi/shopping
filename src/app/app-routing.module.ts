@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetailComponent } from './electronic/detail/detail.component';
 import { ElectronicComponent } from './electronic/electronic.component';
 import { LandingComponent } from './electronic/landing/landing.component';
+import { LaptopComponent } from './electronic/laptop/laptop.component';
 import { MobileComponent } from './electronic/mobile/mobile.component';
 import { FashionComponent } from './fashion/fashion.component';
 
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path: 'electronics' , component : ElectronicComponent , children :[
     {path : '' , component : LandingComponent},
     {path : 'mobile' , component : MobileComponent},
-    // {path : 'mobile/:id' , component : MobileComponent}
+    {path : 'laptop' , component : LaptopComponent}
 ]},
   {path: 'fashion' , component : FashionComponent},
   {path:'admin',component : AdminComponent}
