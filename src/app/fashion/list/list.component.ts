@@ -3,9 +3,9 @@ import { Details } from "src/app/shared/details.model"
 import { ListService } from "../../service/list.service"
 
 @Component({
-  selector: "app-list",
-  templateUrl: "./list.component.html",
-  styleUrls: ["./list.component.css"],
+  selector: 'app-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
   listData: Details[] | undefined ;
@@ -26,4 +26,5 @@ export class ListComponent implements OnInit {
     console.log(mobileDetail , " -> in list");
     this.listComponetToMobileComponent.emit(mobileDetail);
   }
+
 }

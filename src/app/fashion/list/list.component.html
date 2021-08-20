@@ -1,0 +1,31 @@
+
+  <div class="container"  *ngIf="showContent">
+    <div class="row">
+      <div class="col-md-12" *ngFor="let data of listData; let i = index;">
+        <div class="card mb-3 " style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-6" style="max-width: 50%;">
+                <img
+                  src="{{data.imagePath}}"
+                  class="card-img"
+                  alt="..."
+                />
+                <p class="mt-3 h5" style="margin-left: 75px;">₹{{data.price}}</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">{{data.name}}</h5>
+                  <p class="card-text">
+                    <small> {{data.description.substring(0,100) + "..."}} </small>
+                  </p>
+                  <p class="card-text">
+                    <button class="btn btn-success" type="button" (click)="mobileData(data)">Show Detail</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+

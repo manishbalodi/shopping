@@ -1,0 +1,44 @@
+<div class="card border-info h-200" *ngIf='showContent' >
+    <div class="row">
+      <div class="col-md-5">
+        <img
+          src="{{showDetail.imagePath}}"
+          alt="..."
+          class="img-responsive"
+          style="max-height: 300px"
+        />
+      </div>
+      <div class="col-md-7">
+        <p class="mt-3 h5" style="margin-left: 40px">{{showDetail.name}}</p>
+        <p class="mt-3 h6" style="margin-left: 40px">Features :-</p>
+        <div style="margin-left: 40px">
+          <ul>
+            <li>{{showDetail.features.feature1}}</li>
+            <li>{{showDetail.features.feature2}}</li>
+            <li>{{showDetail.features.feature3}}</li>
+            <li>{{showDetail.features.feature4}}</li>
+            <li>{{showDetail.features.feature5}}</li>
+          </ul>
+        </div>
+        <p class="mt-3 h5" style="margin-left: 50px;">Price : ₹{{showDetail.price}}</p>
+        <p class="card-text">
+          <button class="btn btn-success" style="margin-left: 50px;" type="button">Add to Cart</button>
+        </p>
+      </div>
+    </div>
+    <p class="card-text mt-3 h6" style="margin-left: 20px">Description:-</p>
+    <p class="card-text" style="margin-left: 20px">
+      <small>
+        {{showDetail.description}}
+      </small>
+    </p>
+    <p class="card-text mt-3 h6" style="margin-left: 20px">Bank Offers:-</p>
+    <div style="margin-left: 40px">
+      <ul>
+        <li><small>Bank Offer10% off on Axis Bank Credit Cards, up to ₹1000. On orders of ₹5000 and above</small></li>
+        <li><small>Bank Offer10% off on ICICI Bank Credit Cards, up to ₹1000. On orders of ₹5000 and above</small></li>
+        <li><small>Bank Offer10% off on Axis Bank Debit Cards, up to ₹750. On orders of ₹5000 and above</small></li>
+      </ul>
+    </div>
+  </div>
+  

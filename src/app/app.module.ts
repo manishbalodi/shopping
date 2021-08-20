@@ -7,7 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ElectronicComponent } from './electronic/electronic.component';
 import { MobileComponent } from './electronic/mobile/mobile.component';
 import { FashionComponent } from './fashion/fashion.component';
-import { LandingComponent } from './electronic/landing/landing.component';
+import { LandingComponent as ElectronicLanding } from './electronic/landing/landing.component';
+import { LandingComponent as FashionLanding} from './fashion/landing/landing.component';
 import { ListComponent } from './electronic/list/list.component';
 import { DetailComponent } from './electronic/detail/detail.component';
 import { AdminComponent } from './admin/admin.component';
@@ -15,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LaptopComponent } from './electronic/laptop/laptop.component';
 import { ApplianceComponent } from './electronic/appliance/appliance.component';
+import { KidsComponent } from './fashion/kids/kids.component';
 
 
 @NgModule({
@@ -25,12 +27,14 @@ import { ApplianceComponent } from './electronic/appliance/appliance.component';
     ElectronicComponent,
     MobileComponent,
     FashionComponent,
-    LandingComponent,
+    ElectronicLanding,
+    FashionLanding,
     ListComponent,
     DetailComponent,
     AdminComponent,
     LaptopComponent,
-    ApplianceComponent
+    ApplianceComponent,
+    KidsComponent
   ],
   imports: [
     BrowserModule,
