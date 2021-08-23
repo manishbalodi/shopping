@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LaptopComponent } from './electronic/laptop/laptop.component';
 import { ApplianceComponent } from './electronic/appliance/appliance.component';
 import { KidsComponent } from './fashion/kids/kids.component';
+import { WomenComponent } from './fashion/women/women.component';
+import { MenComponent } from './fashion/men/men.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { KidsComponent } from './fashion/kids/kids.component';
     AdminComponent,
     LaptopComponent,
     ApplianceComponent,
-    KidsComponent
+    KidsComponent,
+    WomenComponent,
+    MenComponent
   ],
   imports: [
     BrowserModule,

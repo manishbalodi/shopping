@@ -10,6 +10,8 @@ import { LaptopComponent } from './electronic/laptop/laptop.component';
 import { MobileComponent } from './electronic/mobile/mobile.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { KidsComponent } from './fashion/kids/kids.component';
+import { WomenComponent } from './fashion/women/women.component';
+import { MenComponent } from './fashion/men/men.component';
 
 const routes: Routes = [
   {path:'',redirectTo :'/dashboard' , pathMatch:'full'},
@@ -23,8 +25,8 @@ const routes: Routes = [
   {path: 'fashion' , component : FashionComponent ,  children :[
     {path : '' , component : FashionLanding},
     {path : 'kids' , component : KidsComponent},
-    {path : 'women' , component : LaptopComponent},
-    {path : 'men' , component : ApplianceComponent}
+    {path : 'women' , component : WomenComponent},
+    {path : 'men' , component : MenComponent}
 ]},
   {path:'admin',component : AdminComponent}
 ];
