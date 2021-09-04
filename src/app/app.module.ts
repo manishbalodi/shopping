@@ -19,6 +19,7 @@ import { ApplianceComponent } from './electronic/appliance/appliance.component';
 import { KidsComponent } from './fashion/kids/kids.component';
 import { WomenComponent } from './fashion/women/women.component';
 import { MenComponent } from './fashion/men/men.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { MenComponent } from './fashion/men/men.component';
     ApplianceComponent,
     KidsComponent,
     WomenComponent,
-    MenComponent
+    MenComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

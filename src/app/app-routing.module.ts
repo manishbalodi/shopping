@@ -12,6 +12,7 @@ import { FashionComponent } from './fashion/fashion.component';
 import { KidsComponent } from './fashion/kids/kids.component';
 import { WomenComponent } from './fashion/women/women.component';
 import { MenComponent } from './fashion/men/men.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path:'',redirectTo :'/dashboard' , pathMatch:'full'},
@@ -28,7 +29,8 @@ const routes: Routes = [
     {path : 'women' , component : WomenComponent},
     {path : 'men' , component : MenComponent}
 ]},
-  {path:'admin',component : AdminComponent}
+  {path:'admin',component : AdminComponent},
+  {path:'cart',component : CartComponent}
 ];
 
 @NgModule({

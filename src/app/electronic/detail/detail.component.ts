@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core"
 import { ActivatedRoute, Params } from "@angular/router"
+import { CartService } from "src/app/service/cart.service";
 import { ListService } from "src/app/service/list.service"
 import { Details } from "src/app/shared/details.model"
 
@@ -27,12 +28,18 @@ export class DetailComponent implements OnInit {
 
   constructor(
     private listService: ListService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private cartService : CartService
   ) {}
 
   ngOnInit(): void {
     this.showDetail = this.listService.getDetail(0)
     setTimeout(()=>this.showContent=true, 500);
     console.log(this.showDetail)
+  }
+
+  onAddingToCart()
+  {
+    this.cartService.addToCart(this.showDetail);
   }
 }
