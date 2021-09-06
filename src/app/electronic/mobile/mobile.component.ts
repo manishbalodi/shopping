@@ -25,4 +25,5 @@ export class MobileComponent implements OnInit {
     this.mobileDetailsGotFromList = detail;
   }
 
+
 }

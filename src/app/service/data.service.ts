@@ -15,7 +15,7 @@ export class DataService{
       this.http.post('https://shopit-3f3c8-default-rtdb.firebaseio.com/'+type+'.json' , detailData)
         .subscribe(
       responseData =>{
-        //console.log(responseData);
+        setTimeout(() => {  console.log(responseData); }, 500);
       });
 
     }

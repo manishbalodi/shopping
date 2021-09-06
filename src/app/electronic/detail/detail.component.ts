@@ -41,5 +41,6 @@ export class DetailComponent implements OnInit {
   onAddingToCart()
   {
     this.cartService.addToCart(this.showDetail);
+    // this.isAdded=false;
   }
 }

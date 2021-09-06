@@ -18,7 +18,7 @@ export class ListComponent implements OnInit {
     public showContent : boolean = false;
    ngOnInit(): void {
     this.listData = this.listService.getData(this.type);
-    setTimeout(()=>this.showContent=true, 500);
+    //setTimeout(()=>this.showContent=true, 500);
     //console.log(this.listData)
   }
 

@@ -12,21 +12,21 @@ export class CartService
 
       getCartData()
       {
-         return this.cartData.slice();
-    //      return  this.http.get<Details[]>('https://shopit-3f3c8-default-rtdb.firebaseio.com/cart.json').
-    //    pipe(map(details=>{
-    //     return Object.entries(details);
-    //    }));
+         //return this.cartData.slice();
+         return  this.http.get<Details[]>('https://shopit-3f3c8-default-rtdb.firebaseio.com/cart.json').
+       pipe(map(details=>{
+        return Object.entries(details);
+       }));
       }
 
       addToCart(item : Details)
       {
-        this.cartData.push(item);
-    //     this.http.post('https://shopit-3f3c8-default-rtdb.firebaseio.com/cart.json' , item)
-    //     .subscribe(
-    //   responseData =>{
-    //     //console.log(responseData);
-    //   });
+        // this.cartData.push(item);
+        this.http.post('https://shopit-3f3c8-default-rtdb.firebaseio.com/cart.json' , item)
+        .subscribe(
+      responseData =>{
+        console.log(responseData);
+      });
       }
 
       removeFromCart(itemId : number)
